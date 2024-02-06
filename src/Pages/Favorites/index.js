@@ -6,7 +6,8 @@ import { Container, AreaHeader, Title } from './styles';
 
 import { useNavigation } from '@react-navigation/native';
 import CardGames from '../../Components/CardGames';
-import useStorage from '../Storage/useStorage';
+
+import useStorage from '../../Storage/useStorage';
 
 import { AntDesign } from '@expo/vector-icons';
 
@@ -39,7 +40,7 @@ export default function Favorites() {
             <FlatList
                 data={gamelist}
                 keyExtractor={item => item.id}
-                renderItem={({ item }) => (<CardGames data={item} reloadPage={loadGames} buttonActive={true}/>)}
+                renderItem={({ item }) => (<CardGames data={item} reloadPage={loadGames} buttonActive={true} />)}
                 showsVerticalScrollIndicator={false}
             />
         </Container>

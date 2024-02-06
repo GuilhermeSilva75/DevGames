@@ -126,7 +126,7 @@ export default function Home() {
                 renderItem={({ item }) => (<CardGames data={item} />)}
                 showsVerticalScrollIndicator={false}
                 ListHeaderComponent={
-                    <Text style={{ color: '#FFF', fontWeight: 'bold', fontSize: 20 }}>Trending Gaames</Text>
+                    <Text style={{ color: '#FFF', fontWeight: 'bold', fontSize: 20 }}>Trending Games</Text>
                 }
                 ListHeaderComponentStyle={{ marginBottom: 12, paddingTop: 25 }}
             />
